@@ -1,54 +1,51 @@
-#User inputs string and NATO phonetic alphabet is returned.
-#NATO phonetic encoder
-#Randolph K. Wilson III - randolphkwilson3@gmail.com
-
-import clipboard as board
+#User inputs text and rick astley cipher is returned.
+#rick astley chipher encoder
+#moongazer07
 
 def encodeUserMsg(userInput):
     msg = ""
-    NATObet = {
-                'A' : "Never ",
-                'B' : "Gonna ",
-                'C' : "Give ",
-                'D' : "You ",
-                'E' : "Up ",
-                'F' : "never ",
-                'G' : "gonna ",
-                'H' : "let ",
-                'I' : "you ",
-                'J' : "down ",
+    RICKbet = {
+                'A' : "NEVER ",
+                'B' : "GONNA ",
+                'C' : "GIVE ",
+                'D' : "YOU ",
+                'E' : "UP ",
+                'F' : "Never ",
+                'G' : "Gonna ",
+                'H' : "LET ",
+                'I' : "You ",
+                'J' : "DOWN ",
                 'K' : "NEver ",
                 'L' : "GOnna ",
-                'M' : "Run ",
-                'N' : "Around ",
-                'O' : "And ",
-                'P' : "desert ",
-                'Q' : "you ",
-                'R' : "Romeo ",
-                'S' : "Sierra ",
-                'T' : "Tango ",
-                'U' : "Uniform ",
-                'V' : "Victor ",
-                'W' : "Whiskey ",
-                'X' : "X-ray ",
-                'Y' : "Yankee ",
-                'Z' : "Zulu ",
-                ' ' : "[space] "
+                'M' : "TURN ",
+                'N' : "AROUND ",
+                'O' : "AND ",
+                'P' : "DESSERT ",
+                'Q' : "YOu ",
+                'R' : "NEVer ",
+                'S' : "gonna ",
+                'T' : "TELL ",
+                'U' : "A ",
+                'V' : "LIE ",
+                'W' : "and ",
+                'X' : "HURT ",
+                'Y' : "you ",
+                'Z' : "rick astley ",
+                ' ' : "+ "
                 }
     for ittr in range(len(userInput)):
         if(userInput[ittr].isalpha() or userInput[ittr] == ' '):
-            msg += (NATObet[userInput[ittr]])
-    board.copy(msg)
-    print(msg+"\n")
+            msg += (RICKbet[userInput[ittr]])
+    print(msg+"\n=")
 
 
 
-
-userInput = input("Please enter a string: ")
+print('rick cipher')
+userInput = input("Please enter text to protect: ")
 encodeUserMsg(userInput.upper())
 
 while True:
-    userInput = input("Would you like to continue? Enter 0 to quit or press return to continue: ")
-    if (userInput == '0'):
+    userInput = input("Would you like to continue? press Enter without typing anything to quit or type text and press enter to continue: ")
+    if (userInput == ''):
         break
     encodeUserMsg(userInput.upper())
