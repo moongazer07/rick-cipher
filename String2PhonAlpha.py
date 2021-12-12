@@ -20,7 +20,7 @@ def encodeUserMsg(userInput):
                 'M' : "TURN ",
                 'N' : "AROUND ",
                 'O' : "AND ",
-                'P' : "DESSERT ",
+                'P' : "DESERT ",
                 'Q' : "YOu ",
                 'R' : "NEVer ",
                 'S' : "gonna ",
